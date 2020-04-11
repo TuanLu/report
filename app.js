@@ -71,6 +71,12 @@ const deleteProduct = (req, res) => {
   });
 };
 
+app.get('/', (req, res) => {
+	res.status(200).json({
+		status: 'success',
+		data: 'Hello'
+	})
+});
 app.get('/api/v1/products', getAllProducts);
 app.get('/api/v1/products/:id', getProduct);
 app.post('/api/v1/products', addProduct)
