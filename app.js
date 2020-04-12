@@ -74,7 +74,7 @@ const deleteProduct = (req, res) => {
 app.get('/', (req, res) => {
 	res.status(200).json({
 		status: 'success',
-		data: 'Hello'
+		data: 'Api v1.0.1'
 	})
 });
 app.get('/api/v1/products', getAllProducts);
