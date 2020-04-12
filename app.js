@@ -74,7 +74,7 @@ const deleteProduct = (req, res) => {
 app.get('/', (req, res) => {
 	res.status(200).json({
 		status: 'success',
-		data: 'Api v1.0.1'
+		data: 'Api v1.0.2 . Automate  pull image'
 	})
 });
 app.get('/api/v1/products', getAllProducts);
